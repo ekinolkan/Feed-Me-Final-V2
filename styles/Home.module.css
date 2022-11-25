@@ -108,6 +108,14 @@
   margin-left: 0.5rem;
 }
 
+.container {
+	background: "#1F1F1F"
+}
+
+.wallet-adapter-button-trigger {
+  background-color: #833BBE;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
