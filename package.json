@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.12",
-    "@chakra-ui/react": "^2.4.1",
+    "@chakra-ui/icons": "^2.0.16",
+    "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@metaplex-foundation/js": "^0.17.12",
     "@solana/wallet-adapter-base": "^0.9.19",
     "@solana/wallet-adapter-react": "^0.15.25",
     "@solana/wallet-adapter-react-ui": "^0.9.23",

@@ -32,3 +32,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## MY README
+
+Gerekli kütüphaneleri npm i ile yükleyerek kalan kütüphanaleride npm @.... gerekli kütüphane olarak yükleyebilirsiniz.
+Daha sonrasında npm run dev komutu ile http://localhost:3000/ adresine gidebilirsiniz.
+Main pagede phantom cüzdanınızı bağlayabilirsiniz.
+Bağladıktan sonra Mint Feed Me butonuna tıklayarak sizde Feed Me NFT si mintleyebilirsiniz. (0.05sol)
+Daha sonrasında başarılı mintleme aşamasından sonra açılan pencerede NFT nizi görebilirsiniz.
+Sonrasında time to stake your feed me nft butonuna basarak stake sayfasına gidebilirsiniz.
+Stake sayfasının front endi çalışıyor ama backend kısmı en yakın zamanda tamamlanacaktır.
+
+Token ile ilgili bilgilere buradan ulaşabilirsiniz :
+https://explorer.solana.com/address/FGrGApVx9sjcEFtfE2Ke74upP158MuRS4BsVWw2TBadG?cluster=devnet
+
+NFT ile ilgili bilgilere buradan ulaşabilirsiniz :
+https://www.solaneyes.com/address/CU6YabJvWj1aLrzp32xXQDnne5GxxYDQdiE6753DjRkJ?cluster=devnet

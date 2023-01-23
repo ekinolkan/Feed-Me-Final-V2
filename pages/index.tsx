@@ -16,22 +16,15 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Buildoors</title>
-        <meta name="The NFT Collection for Buildoors" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <Box
-        w="full"
-        h="calc(100vh)"
-        bgImage={connected ? "url(/home-black.svg)" : "url(/home-background.svg)"}
-        backgroundPosition="center"
+        
+        bgImage={connected ? "url(/after-wallet-connection.jpg)" : "url(/feed-me-home-background.jpg)"}
+        //backgroundPosition="no-repeat center center fixed"
+        backgroundSize="cover"
+        //backgroundPosition="center"
       >
         <Stack w="full" h="calc(100vh)" justify="center">
-					{ /* NavBar */ }
           <NavBar />
-
           <Spacer />
             <Center>
               { /* If connected, the second view, otherwise the first */ }
@@ -39,18 +32,6 @@ const Home: NextPage = () => {
               {connected ? <Connected /> : <Disconnected />}
             </Center>
           <Spacer />
-
-          <Center>
-            <Box marginBottom={4} color="white">
-              <a
-                href="https://twitter.com/_buildspace"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                built with @_buildspace
-              </a>
-            </Box>
-          </Center>
         </Stack>
       </Box>
     </div>

@@ -37,11 +37,12 @@ const Disconnected: FC = () => {
         <Heading
           color="white"
           as="h1"
-          size="3xl"
-          noOfLines={2}
+          size="2xl"
+          noOfLines={4}
           textAlign="center"
+         
         >
-          Mint your buildoor. Earn $BLD. Level up.
+          Mint your Feed Me NFTs. Earn $FM and Save the cute DOGS.
         </Heading>
         <Button
           bgColor="accent"
@@ -50,7 +51,7 @@ const Disconnected: FC = () => {
           onClick={handleClick}
         >
           <HStack>
-            <Text>become a buildoor</Text>
+            <Text>Become a Feed Me MEMBER</Text>
             <ArrowForwardIcon />
           </HStack>
         </Button>
