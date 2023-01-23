@@ -1,45 +1,23 @@
 import {
-    Heading,
-    VStack,
-    Text,
-    HStack,
-    Flex,
-    Image,
-    Center,
-    Box,
-  } from "@chakra-ui/react"
-  import { PublicKey } from "@solana/web3.js"
-  import { NextPage } from "next"
-  import styles from "../styles/Home.module.css"
-  import NavBar from "../components/NavBar"
-  import { StakeOptionsDisplay } from "../components/StakeOptionsDisplay"
-  import { Metaplex, walletAdapterIdentity } from "@metaplex-foundation/js"
-  import { useConnection, useWallet } from "@solana/wallet-adapter-react"
-  import { useEffect, useState } from "react"
+  Heading,
+  VStack,
+  Text,
+  HStack,
+  Flex,
+  Image,
+  Center,
+  Box,
+} from "@chakra-ui/react"
+import { PublicKey } from "@solana/web3.js"
+import { NextPage } from "next"
+import { useState } from "react"
+// Existing imports
+import NavBar from "../components/NavBar"
+import styles from "../styles/Home.module.css"
+import { StakeOptionsDisplay } from "../components/StakeOptionsDisplay"
 
-  const Stake: NextPage<StakeProps> = ({ mint, imageSrc }) => {
-    const [isStaking, setIsStaking] = useState(false)
-    const [nftData, setNftData] = useState<any>()
-    const { connection } = useConnection()
-    const walletAdapter = useWallet()
-
-    useEffect(() => {
-        const metaplex = Metaplex.make(connection).use(
-          walletAdapterIdentity(walletAdapter)
-        )
-    
-        try {
-          metaplex
-            .nfts()
-            .findByMint({ mintAddress: mint })
-            .then((nft) => {
-              console.log("nft data on stake page:", nft)
-              setNftData(nft)
-            })
-        } catch (e) {
-          console.log("error getting nft:", e)
-        }
-      }, [connection, walletAdapter])
+const Stake: NextPage<StakeProps> = ({ mint, imageSrc }) => {
+  const [isStaking, setIsStaking] = useState(false)
   
     return (
         <div className={styles.container}>
@@ -81,8 +59,7 @@ import {
             </VStack>
             <VStack alignItems="flex-start" spacing={10}>
               <StakeOptionsDisplay
-               nftData={nftData}
-               isStaked={false}
+               isStaking={false}
                daysStaked={4}
                totalEarned={60}
                claimable={20}
